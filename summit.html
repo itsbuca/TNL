@@ -1,0 +1,448 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Texas Oil &amp; Gas AI Summit '26 — Executive Preparation Event</title>
+<meta name="description" content="An invitation-only executive briefing on Deterministic AI Governance for the oil & gas industry. August 21, 2026 · Formation, Frisco, Texas.">
+<meta property="og:title" content="Texas Oil &amp; Gas AI Summit '26 — Executive Preparation Event">
+<meta property="og:description" content="Deterministic AI Governance for the oil & gas industry. By invitation only.">
+<meta property="og:type" content="website">
+<meta property="og:url" content="https://nehemiahlayer.com/summit">
+<meta name="theme-color" content="#004A87">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Exo+2:ital,wght@0,400;0,500;0,600;0,700;0,800;1,400&display=swap" rel="stylesheet">
+<style>
+  /* ============================================================
+     ▓▓▓  EVENT-FILLED SWITCH  ▓▓▓
+     When the 40 seats are taken, change  false  to  true  on the
+     next line, then re-upload. That hides the RSVP form and shows
+     the "Event Filled" message. Nothing else to touch.
+     ============================================================ */
+  /* (the switch itself is the <body> class further down) */
+
+  :root{
+    --navy:#004A87;
+    --navy-deep:#01315c;
+    --ink:#12212e;
+    --slate:#566472;
+    --hair:#dbe4ec;
+    --paper:#ffffff;
+    --wash:#f4f8fb;
+    --gold:#b0842f;
+    --permit:#1f8a4c;
+    --constrain:#b8862f;
+    --reject:#b3402f;
+    --escalate:#004A87;
+  }
+  *{box-sizing:border-box;}
+  html,body{margin:0;padding:0;}
+  body{
+    font-family:"Exo 2",-apple-system,BlinkMacSystemFont,"Segoe UI",Roboto,Helvetica,Arial,sans-serif;
+    color:var(--ink);
+    background:#e8edf2;
+    line-height:1.5;
+    -webkit-font-smoothing:antialiased;
+  }
+  .sheet{
+    max-width:8.5in;
+    margin:24px auto;
+    background:var(--paper);
+    box-shadow:0 6px 30px rgba(4,40,70,.14);
+  }
+  .pad{padding:0 0.85in;}
+
+  /* ---------- Masthead ---------- */
+  .masthead{
+    background:var(--navy);
+    background:linear-gradient(135deg,var(--navy) 0%,var(--navy-deep) 100%);
+    color:#fff;
+    padding:34px 0.85in 32px;
+  }
+  .brandrow{display:flex;align-items:center;gap:14px;}
+  .shield{flex:0 0 auto;width:38px;height:44px;}
+  .wordmark{font-weight:800;letter-spacing:.02em;font-size:20px;line-height:1;}
+  .wordmark small{display:block;font-weight:500;letter-spacing:.16em;font-size:10px;color:#a9c6e2;margin-top:5px;text-transform:uppercase;}
+  .eyebrow{
+    margin-top:26px;font-size:10.5px;letter-spacing:.26em;text-transform:uppercase;color:#8fb4d6;font-weight:600;
+  }
+  h1.title{
+    font-size:33px;line-height:1.07;font-weight:800;margin:9px 0 8px;letter-spacing:-.01em;
+  }
+  .subtitle{font-size:14.5px;color:#cfe0f0;font-weight:500;max-width:6.3in;}
+  .eventmeta{
+    margin-top:20px;font-size:11px;letter-spacing:.14em;text-transform:uppercase;color:#a9c6e2;font-weight:600;
+    padding-top:16px;border-top:1px solid rgba(255,255,255,.16);
+  }
+  .cta{
+    display:inline-block;margin-top:20px;background:#fff;color:var(--navy);
+    text-decoration:none;border-radius:3px;padding:11px 22px;font-size:12.5px;font-weight:800;
+    letter-spacing:.03em;transition:transform .12s ease,box-shadow .12s ease;
+  }
+  .cta:hover{transform:translateY(-1px);box-shadow:0 6px 18px rgba(0,0,0,.22);}
+
+  /* ---------- Sections ---------- */
+  section{padding:26px 0 6px;}
+  .kicker{
+    font-size:10px;letter-spacing:.24em;text-transform:uppercase;color:var(--navy);font-weight:700;
+    display:flex;align-items:center;gap:10px;margin-bottom:8px;
+  }
+  .kicker::before{content:"";width:22px;height:2px;background:var(--gold);display:inline-block;}
+  h2{font-size:21px;font-weight:700;margin:0 0 11px;line-height:1.2;letter-spacing:-.01em;color:var(--navy-deep);}
+  p{margin:0 0 12px;font-size:12.8px;color:#26333f;}
+  p.lead{font-size:13.8px;color:var(--ink);}
+  strong{font-weight:700;color:var(--ink);}
+  .hair{height:1px;background:var(--hair);margin:8px 0.85in;}
+
+  /* ---------- Oversized pull line (in-flow) ---------- */
+  .pullline{
+    font-size:23px;line-height:1.25;font-weight:800;color:var(--navy);
+    text-align:center;letter-spacing:-.01em;margin:20px 0 18px;
+  }
+
+  /* ---------- Full-width navy band (The Question) ---------- */
+  .band{
+    background:var(--navy);
+    background:linear-gradient(135deg,var(--navy) 0%,var(--navy-deep) 100%);
+    color:#fff;padding:34px 0.85in;margin-top:8px;
+  }
+  .band .qk{font-size:10px;letter-spacing:.24em;text-transform:uppercase;color:#8fb4d6;font-weight:700;margin-bottom:10px;}
+  .band q,.band .quote{font-size:22px;line-height:1.32;font-weight:700;letter-spacing:-.01em;display:block;}
+
+  /* ---------- Pattern grid ---------- */
+  .grouptitle{font-size:10px;letter-spacing:.18em;text-transform:uppercase;color:var(--navy);font-weight:800;margin:14px 0 8px;}
+  .patrow{display:grid;grid-template-columns:1fr 1fr;gap:8px 20px;margin-bottom:4px;}
+  .pat{position:relative;padding:0 0 9px 18px;font-size:12px;color:#26333f;}
+  .pat::before{content:"";position:absolute;left:2px;top:6px;width:7px;height:7px;background:var(--navy);transform:rotate(45deg);}
+  .pat b{color:var(--ink);}
+  .patclose{margin-top:6px;font-weight:600;color:var(--navy-deep);font-size:12.6px;}
+
+  /* ---------- Verdict chips ---------- */
+  .verdicts{display:grid;grid-template-columns:repeat(4,1fr);gap:8px;margin:10px 0 14px;}
+  .verdict{border:1px solid var(--hair);border-top:3px solid var(--navy);border-radius:3px;padding:9px 10px 10px;background:#fff;}
+  .verdict .name{font-weight:800;font-size:11.5px;letter-spacing:.06em;}
+  .verdict .desc{font-size:10.6px;color:var(--slate);margin-top:3px;line-height:1.35;}
+  .v-permit{border-top-color:var(--permit);} .v-permit .name{color:var(--permit);}
+  .v-constrain{border-top-color:var(--constrain);} .v-constrain .name{color:var(--constrain);}
+  .v-reject{border-top-color:var(--reject);} .v-reject .name{color:var(--reject);}
+  .v-escalate{border-top-color:var(--escalate);} .v-escalate .name{color:var(--escalate);}
+
+  /* ---------- Roadmap ---------- */
+  .road{margin:6px 0 8px;padding:0;list-style:none;}
+  .road li{position:relative;padding:0 0 16px 26px;border-left:2px solid var(--hair);margin-left:6px;}
+  .road li:last-child{padding-bottom:2px;}
+  .road li::before{content:"";position:absolute;left:-7px;top:2px;width:12px;height:12px;border-radius:50%;background:#fff;border:2px solid var(--slate);}
+  .road li.here::before{background:var(--gold);border-color:var(--gold);box-shadow:0 0 0 4px rgba(176,132,47,.18);}
+  .road .when{font-weight:800;font-size:12.5px;color:var(--navy-deep);}
+  .road .where{font-size:11px;color:var(--slate);font-weight:600;}
+  .road .note{font-size:11.6px;color:#3a4650;margin-top:2px;}
+  .road li.here .when::after{content:"You are here";font-size:9px;letter-spacing:.12em;text-transform:uppercase;color:#fff;background:var(--gold);border-radius:20px;padding:2px 8px;margin-left:9px;vertical-align:middle;font-weight:800;}
+
+  /* ---------- Agenda points ---------- */
+  .points{margin:4px 0 10px;padding:0;list-style:none;}
+  .points li{position:relative;padding:0 0 9px 20px;font-size:12.4px;color:#26333f;}
+  .points li::before{content:"";position:absolute;left:2px;top:6px;width:7px;height:7px;background:var(--navy);transform:rotate(45deg);}
+  .points li b{color:var(--ink);}
+
+  .factbar{display:flex;flex-wrap:wrap;gap:6px 30px;background:var(--wash);border:1px solid var(--hair);border-radius:4px;padding:12px 16px;margin:4px 0 12px;}
+  .factbar div{font-size:11.5px;}
+  .factbar .lab{display:block;font-size:9px;letter-spacing:.12em;text-transform:uppercase;color:var(--slate);font-weight:700;margin-bottom:2px;}
+  .factbar .val{font-weight:700;color:var(--ink);}
+
+  /* ---------- Form ---------- */
+  .formwrap{background:var(--wash);border:1px solid var(--hair);border-radius:5px;padding:20px 20px 22px;margin:8px 0 4px;}
+  .frow{display:grid;grid-template-columns:1fr 1fr;gap:12px;margin-bottom:12px;}
+  .field{display:flex;flex-direction:column;}
+  .field.full{grid-column:1 / -1;}
+  label{font-size:10.5px;letter-spacing:.05em;text-transform:uppercase;color:var(--slate);font-weight:700;margin-bottom:5px;}
+  input,select,textarea{
+    font-family:inherit;font-size:13px;color:var(--ink);background:#fff;
+    border:1px solid var(--hair);border-radius:3px;padding:9px 11px;width:100%;
+  }
+  input:focus,select:focus,textarea:focus{outline:2px solid var(--navy);outline-offset:1px;border-color:var(--navy);}
+  textarea{resize:vertical;min-height:66px;}
+  .submit{
+    background:var(--navy);color:#fff;border:none;border-radius:3px;padding:13px 24px;
+    font-family:inherit;font-size:13px;font-weight:800;letter-spacing:.03em;cursor:pointer;
+    transition:background .12s ease;width:100%;
+  }
+  .submit:hover{background:var(--navy-deep);}
+  .formnote{font-size:10.5px;color:var(--slate);margin-top:10px;text-align:center;}
+  .success{display:none;background:#eaf5ee;border:1px solid #bfe0cc;border-radius:5px;padding:22px;text-align:center;color:#1c6b3f;font-weight:600;font-size:13.5px;}
+
+  /* ---------- FILLED state ---------- */
+  .filledbox{display:none;background:var(--navy);background:linear-gradient(135deg,var(--navy) 0%,var(--navy-deep) 100%);color:#fff;border-radius:6px;padding:30px 26px;text-align:center;margin:8px 0 4px;}
+  .filledbox .tag{font-size:11px;letter-spacing:.24em;text-transform:uppercase;color:#9cc3e6;font-weight:800;margin-bottom:10px;}
+  .filledbox h3{font-size:24px;font-weight:800;margin:0 0 10px;letter-spacing:-.01em;}
+  .filledbox p{color:#d3e2f1;font-size:13px;margin:0 auto;max-width:5.4in;}
+  .filledbox .cal{margin-top:16px;font-size:13.5px;font-weight:800;letter-spacing:.02em;color:#fff;}
+
+  /* switch behavior: default = taking RSVPs; add class "filled" to <body> to flip */
+  body.filled #rsvp .formwrap{display:none;}
+  body.filled #rsvp .filledbox{display:block;}
+  body.filled .cta{display:none;}
+
+  /* ---------- Close / footer ---------- */
+  .close{background:var(--navy);color:#fff;padding:24px 0.85in 26px;margin-top:22px;}
+  .close .sig{font-weight:800;font-size:16px;letter-spacing:.02em;}
+  .close .sig span{color:#9cc3e6;}
+  .brandsig{display:flex;align-items:center;gap:12px;margin-bottom:14px;}
+  .brandsig .shield{width:30px;height:35px;}
+  .brandsig .nm{font-weight:800;font-size:14px;letter-spacing:.02em;}
+  .footline{padding:14px 0.85in 18px;font-size:10px;color:var(--slate);line-height:1.7;}
+  .footline .tm{color:var(--navy-deep);font-weight:600;}
+
+  @media print{
+    body{background:#fff;}
+    .sheet{box-shadow:none;margin:0;max-width:none;}
+  }
+  @media (max-width:640px){
+    .pad,.masthead,.band,.close,.footline,.hair{padding-left:22px;padding-right:22px;}
+    .hair{margin-left:22px;margin-right:22px;}
+    .verdicts{grid-template-columns:1fr 1fr;}
+    .patrow{grid-template-columns:1fr;}
+    .frow{grid-template-columns:1fr;}
+    h1.title{font-size:27px;}
+    .pullline{font-size:20px;}
+    .band q,.band .quote{font-size:19px;}
+  }
+</style>
+</head>
+<!-- ▓▓ To close RSVPs at 40: change  <body>  to  <body class="filled">  and re-upload. ▓▓ -->
+<body>
+<div class="sheet">
+
+  <!-- ============ HERO ============ -->
+  <div class="masthead">
+    <div class="brandrow">
+      <svg class="shield" viewBox="0 0 38 44" fill="none" xmlns="http://www.w3.org/2000/svg" aria-hidden="true">
+        <path d="M19 1.5 36 7v13c0 12-7.6 19.5-17 22.5C9.6 39.5 2 32 2 20V7L19 1.5Z" fill="#0b5ea3" stroke="#cfe0f0" stroke-width="1.4"/>
+        <path d="M12 21.5l4.8 4.8L27 15" stroke="#ffffff" stroke-width="2.6" stroke-linecap="round" stroke-linejoin="round"/>
+      </svg>
+      <div class="wordmark">THE NEHEMIAH LAYER<small>AlêBuca Global Connect, LLC</small></div>
+    </div>
+
+    <div class="eyebrow">Texas Oil &amp; Gas AI Summit '26 · Executive Preparation Event</div>
+    <h1 class="title">Deterministic AI Governance<br>for the Oil &amp; Gas Industry</h1>
+    <div class="subtitle">An invitation-only executive briefing on the discipline that governs what artificial intelligence is allowed to do — before it acts.</div>
+    <div class="eventmeta">August 21, 2026 · 2:00–4:00 PM · Formation — Frisco, Texas · By Invitation Only</div>
+    <a class="cta" href="#rsvp">Request an Invitation</a>
+  </div>
+
+  <div class="pad">
+
+    <!-- ============ THE GOVERNOR PRINCIPLE ============ -->
+    <section>
+      <div class="kicker">The Governor Principle</div>
+      <h2>Every powerful system you run is governed before it acts.</h2>
+      <p class="lead">A producing well wants to flow — the choke valve decides the rate. A drilling rig meets formation pressure — the blowout preventer decides what happens next. A purchase order moves millions of dollars — the approval authority decides whether it clears.</p>
+      <p>Notice what these have in common. The governor is never the system itself. The choke is not the reservoir. The BOP is not the drill string. The approval limit is not set by the person spending the money.</p>
+      <div class="pullline">A governor is never part of the system it governs.</div>
+      <p>A governor you can argue with isn't a governor. Artificial intelligence is now entering your operations — the first operational system capable of reasoning and initiating action on its own. And almost everywhere it arrives, it arrives without one.</p>
+    </section>
+  </div>
+
+  <!-- ============ THE QUESTION (band) ============ -->
+  <div class="band">
+    <div class="qk">The Question</div>
+    <span class="quote">Why should AI be the only critical operational system without a deterministic governor?</span>
+  </div>
+
+  <div class="pad">
+
+    <!-- ============ THE PATTERN ============ -->
+    <section>
+      <div class="kicker">The Pattern</div>
+      <h2>You already trust this principle. Everywhere.</h2>
+      <p>Across every kind of system in your company — physical, digital, financial — a governor stands outside the process it protects.</p>
+
+      <div class="grouptitle">Physical &amp; Safety Governors</div>
+      <div class="patrow">
+        <div class="pat"><b>Water line → Faucet.</b> Decides if it flows, when, where, and how much.</div>
+        <div class="pat"><b>Producing well → Choke valve.</b> The reservoir wants to flow; the choke sets the rate and the safe limit.</div>
+        <div class="pat"><b>Drilling rig → Blowout Preventer.</b> When formation pressure exceeds acceptable limits, the BOP acts.</div>
+        <div class="pat"><b>Pipeline → Isolation / ESD valve.</b> Governs direction, continuation, and emergency shutdown.</div>
+        <div class="pat"><b>Pressure vessel → Relief valve.</b> Set independently of the process. It doesn't ask permission.</div>
+        <div class="pat"><b>Storage tank → High-level shutoff.</b> Governs maximum fill and stops the transfer before overflow.</div>
+        <div class="pat"><b>Rotating equipment → Overspeed trip.</b> The original governor — the device the word itself comes from.</div>
+      </div>
+
+      <div class="grouptitle">Control &amp; Permission Governors</div>
+      <div class="patrow">
+        <div class="pat"><b>Electrical system → Circuit breaker.</b> Trips on fault. The appliance doesn't get a vote.</div>
+        <div class="pat"><b>SCADA → Authentication &amp; role-based permissions.</b> Governs who logs in, which commands run, which assets they touch.</div>
+      </div>
+
+      <div class="grouptitle">Financial Approval Governors</div>
+      <div class="patrow">
+        <div class="pat"><b>ERP → Approval authority.</b> Governs spending limits and authorization levels. The person spending the money never sets their own limit.</div>
+      </div>
+
+      <div class="patclose">Every one of them is external to the actor it governs. Every time.</div>
+    </section>
+
+    <div class="hair"></div>
+
+    <!-- ============ THE NEHEMIAH LAYER ============ -->
+    <section>
+      <div class="kicker">The Natural Conclusion</div>
+      <h2>The Nehemiah Layer</h2>
+      <p>The Nehemiah Layer is AlêBuca Global Connect's Deterministic Authority Platform. It sits between AI-generated intent and real-world execution. Before any AI action reaches your systems, TNL evaluates it against your organization's rules, permissions, policies, approval requirements, and operational constraints — and returns a deterministic decision.</p>
+      <div class="verdicts">
+        <div class="verdict v-permit"><div class="name">PERMIT</div><div class="desc">Within authority. The action proceeds.</div></div>
+        <div class="verdict v-constrain"><div class="name">CONSTRAIN</div><div class="desc">Allowed only within set limits.</div></div>
+        <div class="verdict v-reject"><div class="name">REJECT</div><div class="desc">Violates policy. Blocked before it executes.</div></div>
+        <div class="verdict v-escalate"><div class="name">ESCALATE</div><div class="desc">Requires a human to approve.</div></div>
+      </div>
+      <p>Every decision is permanently recorded. Not another AI model. Not another automation tool. A governor — external to the system it governs, by design.</p>
+      <div class="pullline">AI Only Acts When We Allow It.</div>
+    </section>
+
+    <div class="hair"></div>
+
+    <!-- ============ THE ROADMAP ============ -->
+    <section>
+      <div class="kicker">The Roadmap</div>
+      <h2>This is where the discipline begins.</h2>
+      <ul class="road">
+        <li class="here">
+          <div class="when">August 21, 2026 — Executive Preparation Event</div>
+          <div class="where">Formation · Frisco, TX</div>
+          <div class="note">Invitation-only. The founding conversation. (This event.)</div>
+        </li>
+        <li>
+          <div class="when">May 2027 — Texas Oil &amp; Gas AI Summit</div>
+          <div class="where">Houston, TX · Two to three days</div>
+          <div class="note">The inaugural flagship. Its shape — sessions, focus, format — informed directly by the executives in the room on August 21.</div>
+        </li>
+        <li>
+          <div class="when">November 2027 — U.S. Oil &amp; Gas AI Summit</div>
+          <div class="where">The conversation expands nationally.</div>
+        </li>
+        <li>
+          <div class="when">2028 — Global Oil &amp; Gas AI Summit</div>
+          <div class="where">The world's premier executive forum for AI governance in oil &amp; gas.</div>
+        </li>
+      </ul>
+      <p>The objective is not another conference. It is to establish <strong>Deterministic AI Governance</strong> as an operational discipline for the oil &amp; gas industry — beginning in Texas.</p>
+    </section>
+
+    <div class="hair"></div>
+
+    <!-- ============ THE EVENT ============ -->
+    <section>
+      <div class="kicker">The Executive Preparation Event</div>
+      <h2>An intentionally small room.</h2>
+      <div class="factbar">
+        <div><span class="lab">Date</span><span class="val">August 21, 2026</span></div>
+        <div><span class="lab">Time</span><span class="val">2:00 – 4:00 PM</span></div>
+        <div><span class="lab">Location</span><span class="val">Formation · Frisco, TX</span></div>
+        <div><span class="lab">Seating</span><span class="val">Limited to 40 · By invitation</span></div>
+      </div>
+      <p>A focused executive briefing for oil &amp; gas leadership. In one session, we will:</p>
+      <ul class="points">
+        <li>Introduce <b>Deterministic AI Governance</b> as an operational discipline.</li>
+        <li>Explain why governing AI action is becoming a matter of operational hygiene, not theory.</li>
+        <li>Demonstrate <b>The Nehemiah Layer</b> live.</li>
+        <li>Unveil the inaugural <b>Texas Oil &amp; Gas AI Summit</b> — Houston, May 2027.</li>
+        <li><b>Gather your input</b> on what the inaugural Summit should be. The executives in this room help shape it.</li>
+      </ul>
+      <p>Executives should leave with one realization: <em>"I never knew AI didn't already have a governor."</em></p>
+    </section>
+
+    <div class="hair"></div>
+
+    <!-- ============ RSVP ============ -->
+    <section id="rsvp">
+      <div class="kicker">Request an Invitation</div>
+      <h2>Reserve your seat.</h2>
+      <p>Seating is limited to 40 and by invitation. Tell us who you are and we'll be in touch.</p>
+
+      <!-- RSVP FORM (hidden automatically when body has class "filled") -->
+      <div class="formwrap">
+        <form action="https://formspree.io/f/xwvgkyra" method="POST" id="rsvpForm">
+          <input type="hidden" name="_subject" value="Executive Preparation Event — RSVP">
+          <div class="frow">
+            <div class="field"><label for="name">Full Name *</label><input id="name" type="text" name="Full Name" required></div>
+            <div class="field"><label for="title">Title / Role *</label><input id="title" type="text" name="Title" required></div>
+          </div>
+          <div class="frow">
+            <div class="field"><label for="company">Company *</label><input id="company" type="text" name="Company" required></div>
+            <div class="field"><label for="email">Email *</label><input id="email" type="email" name="Email" required></div>
+          </div>
+          <div class="frow">
+            <div class="field"><label for="phone">Phone</label><input id="phone" type="tel" name="Phone"></div>
+            <div class="field"><label for="rsvp">Will you attend? *</label>
+              <select id="rsvp" name="RSVP" required>
+                <option value="" disabled selected>Select…</option>
+                <option value="Yes — I will attend">Yes — I will attend</option>
+                <option value="No — I cannot attend">No — I cannot attend</option>
+              </select>
+            </div>
+          </div>
+          <div class="frow">
+            <div class="field full"><label for="draw">What's drawing you to AI governance? (optional)</label><textarea id="draw" name="What's drawing you to AI governance"></textarea></div>
+          </div>
+          <button class="submit" type="submit">Request an Invitation</button>
+          <div class="formnote">Seating is limited to 40. Once filled, invitations close.</div>
+        </form>
+        <div class="success" id="successMsg">Thank you. Your request has been received — we'll be in touch shortly.</div>
+      </div>
+
+      <!-- FILLED MESSAGE (shown automatically when body has class "filled") -->
+      <div class="filledbox">
+        <div class="tag">Event Filled</div>
+        <h3>The 40 seats for August 21 are taken.</h3>
+        <p>Thank you for the tremendous interest. The Executive Preparation Event has reached capacity.</p>
+        <div class="cal">Mark your calendar — Texas Oil &amp; Gas AI Summit · Houston · May 2027.</div>
+      </div>
+    </section>
+
+  </div>
+
+  <!-- ============ CLOSE ============ -->
+  <div class="close">
+    <div class="brandsig">
+      <svg class="shield" viewBox="0 0 38 44" fill="none" xmlns="http://www.w3.org/2000/svg" aria-hidden="true">
+        <path d="M19 1.5 36 7v13c0 12-7.6 19.5-17 22.5C9.6 39.5 2 32 2 20V7L19 1.5Z" fill="#0b5ea3" stroke="#cfe0f0" stroke-width="1.4"/>
+        <path d="M12 21.5l4.8 4.8L27 15" stroke="#ffffff" stroke-width="2.6" stroke-linecap="round" stroke-linejoin="round"/>
+      </svg>
+      <div class="nm">THE NEHEMIAH LAYER</div>
+    </div>
+    <div class="sig">AI Only Acts <span>When We Allow It.</span></div>
+  </div>
+
+  <div class="footline">
+    <div><strong>AlêBuca Global Connect, LLC</strong></div>
+    <div class="tm">The Nehemiah Layer™ · Deterministic Authority Platform™ · Deterministic AI Governance™</div>
+    <div>© 2026 AlêBuca Global Connect, LLC. All rights reserved.</div>
+  </div>
+
+</div>
+
+<script>
+  // Submit the RSVP to Formspree via fetch so we can show an inline
+  // confirmation instead of leaving the page.
+  var form = document.getElementById('rsvpForm');
+  if (form) {
+    form.addEventListener('submit', function (e) {
+      e.preventDefault();
+      var data = new FormData(form);
+      fetch(form.action, { method: 'POST', body: data, headers: { 'Accept': 'application/json' } })
+        .then(function (r) {
+          if (r.ok) {
+            form.style.display = 'none';
+            document.getElementById('successMsg').style.display = 'block';
+          } else {
+            alert('Something went wrong. Please email info@alebuca.com and we will reserve your seat.');
+          }
+        })
+        .catch(function () {
+          alert('Something went wrong. Please email info@alebuca.com and we will reserve your seat.');
+        });
+    });
+  }
+</script>
+</body>
+</html>
