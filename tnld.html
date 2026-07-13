@@ -1,0 +1,321 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<meta name="robots" content="noindex, nofollow">
+<title>The Nehemiah Layer — Friends &amp; Family</title>
+<meta name="description" content="Deterministic pre-execution authority for autonomous systems. AI Only Acts When We Allow It.">
+<meta property="og:title" content="The Nehemiah Layer — Friends &amp; Family">
+<meta property="og:description" content="Deterministic pre-execution authority for the systems that now act on their own.">
+<meta property="og:type" content="website">
+<meta property="og:url" content="https://nehemiahlayer.com/tnld">
+<meta name="theme-color" content="#004A87">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Exo+2:ital,wght@0,400;0,500;0,600;0,700;0,800;1,400&display=swap" rel="stylesheet">
+<style>
+  :root{
+    --navy:#004A87;
+    --navy-deep:#01315c;
+    --ink:#12212e;
+    --slate:#566472;
+    --hair:#dbe4ec;
+    --paper:#ffffff;
+    --wash:#f4f8fb;
+    --gold:#b0842f;
+    --permit:#1f8a4c;
+    --constrain:#b8862f;
+    --reject:#b3402f;
+    --escalate:#004A87;
+  }
+  *{box-sizing:border-box;}
+  html,body{margin:0;padding:0;}
+  body{
+    font-family:"Exo 2",-apple-system,BlinkMacSystemFont,"Segoe UI",Roboto,Helvetica,Arial,sans-serif;
+    color:var(--ink);
+    background:#e8edf2;
+    line-height:1.5;
+    -webkit-font-smoothing:antialiased;
+  }
+  .sheet{
+    max-width:8.5in;
+    margin:24px auto;
+    background:var(--paper);
+    box-shadow:0 6px 30px rgba(4,40,70,.14);
+  }
+  .pad{padding:0 0.85in;}
+
+  /* ---------- Masthead ---------- */
+  .masthead{
+    background:var(--navy);
+    background:linear-gradient(135deg,var(--navy) 0%,var(--navy-deep) 100%);
+    color:#fff;
+    padding:30px 0.85in 26px;
+  }
+  .brandrow{display:flex;align-items:center;gap:14px;}
+  .shield{flex:0 0 auto;width:38px;height:44px;}
+  .wordmark{font-weight:800;letter-spacing:.02em;font-size:20px;line-height:1;}
+  .wordmark small{display:block;font-weight:500;letter-spacing:.16em;font-size:10px;color:#a9c6e2;margin-top:5px;text-transform:uppercase;}
+  .eyebrow{
+    margin-top:22px;font-size:10.5px;letter-spacing:.28em;text-transform:uppercase;color:#8fb4d6;font-weight:600;
+  }
+  h1.title{
+    font-size:31px;line-height:1.06;font-weight:800;margin:8px 0 6px;letter-spacing:-.01em;
+  }
+  .subtitle{font-size:14px;color:#cfe0f0;font-weight:500;max-width:6.2in;}
+  .tagchip{
+    display:inline-block;margin-top:18px;background:rgba(255,255,255,.12);
+    border:1px solid rgba(255,255,255,.28);border-radius:2px;
+    padding:6px 12px;font-size:11.5px;font-weight:700;letter-spacing:.04em;
+  }
+
+  /* ---------- Prepared-for band ---------- */
+  .preparedband{
+    display:flex;flex-wrap:wrap;gap:4px 40px;
+    padding:14px 0.85in;background:var(--wash);border-bottom:1px solid var(--hair);
+    font-size:11.5px;
+  }
+  .preparedband .lab{color:var(--slate);letter-spacing:.06em;text-transform:uppercase;font-size:9.5px;font-weight:600;display:block;margin-bottom:2px;}
+  .preparedband .val{font-weight:600;color:var(--ink);}
+
+  /* ---------- Sections ---------- */
+  section{padding:22px 0 4px;}
+  .kicker{
+    font-size:10px;letter-spacing:.24em;text-transform:uppercase;color:var(--navy);font-weight:700;
+    display:flex;align-items:center;gap:10px;margin-bottom:7px;
+  }
+  .kicker::before{content:"";width:22px;height:2px;background:var(--gold);display:inline-block;}
+  h2{font-size:19px;font-weight:700;margin:0 0 9px;line-height:1.2;letter-spacing:-.01em;color:var(--navy-deep);}
+  p{margin:0 0 11px;font-size:12.6px;color:#26333f;}
+  p.lead{font-size:13.6px;color:var(--ink);}
+  strong{font-weight:700;color:var(--ink);}
+  .hair{height:1px;background:var(--hair);margin:6px 0.85in;}
+
+  /* ---------- Verdict strip (signature) ---------- */
+  .verdicts{display:grid;grid-template-columns:repeat(4,1fr);gap:8px;margin:6px 0 12px;}
+  .verdict{border:1px solid var(--hair);border-top:3px solid var(--navy);border-radius:3px;padding:9px 10px 10px;background:#fff;}
+  .verdict .name{font-weight:800;font-size:11.5px;letter-spacing:.06em;}
+  .verdict .desc{font-size:10.6px;color:var(--slate);margin-top:3px;line-height:1.35;}
+  .v-permit{border-top-color:var(--permit);} .v-permit .name{color:var(--permit);}
+  .v-constrain{border-top-color:var(--constrain);} .v-constrain .name{color:var(--constrain);}
+  .v-reject{border-top-color:var(--reject);} .v-reject .name{color:var(--reject);}
+  .v-escalate{border-top-color:var(--escalate);} .v-escalate .name{color:var(--escalate);}
+
+  /* ---------- Value points ---------- */
+  .points{margin:2px 0 8px;padding:0;list-style:none;}
+  .points li{position:relative;padding:0 0 9px 20px;font-size:12.4px;color:#26333f;}
+  .points li::before{content:"";position:absolute;left:2px;top:6px;width:7px;height:7px;background:var(--navy);transform:rotate(45deg);}
+  .points li b{color:var(--ink);}
+
+  /* ---------- Applies-to chips ---------- */
+  .applies{display:flex;flex-wrap:wrap;gap:6px;margin:4px 0 10px;}
+  .applies span{font-size:10.8px;background:var(--wash);border:1px solid var(--hair);color:var(--navy-deep);padding:4px 9px;border-radius:20px;font-weight:600;}
+
+  /* ---------- Offer cards ---------- */
+  .pricegrid{display:grid;grid-template-columns:repeat(3,1fr);gap:10px;margin:6px 0 8px;}
+  .price{border:1px solid var(--hair);border-radius:4px;padding:12px 12px 13px;background:var(--wash);}
+  .price.feature{background:#fff;border-color:var(--navy);border-top:3px solid var(--navy);}
+  .price .amt{font-size:20px;font-weight:800;color:var(--navy);line-height:1;}
+  .price .unit{font-size:10.5px;color:var(--slate);margin-top:4px;letter-spacing:.02em;}
+  .price .lab{font-size:9.5px;text-transform:uppercase;letter-spacing:.1em;color:var(--slate);font-weight:700;margin-bottom:7px;}
+
+  /* ---------- Callout ---------- */
+  .callout{border:1px solid var(--hair);border-left:3px solid var(--gold);background:var(--wash);border-radius:3px;padding:11px 14px;margin:4px 0 10px;font-size:12px;color:#26333f;}
+  .callout b{color:var(--ink);}
+
+  /* ---------- Close / contact ---------- */
+  .close{background:var(--navy);color:#fff;padding:22px 0.85in 24px;margin-top:20px;}
+  .close h2{color:#fff;}
+  .close p{color:#d3e2f1;}
+  .contact{display:flex;flex-wrap:wrap;gap:6px 34px;margin-top:12px;font-size:11.8px;}
+  .contact .lab{display:block;font-size:9px;letter-spacing:.14em;text-transform:uppercase;color:#8fb4d6;font-weight:600;margin-bottom:2px;}
+  .contact .val{font-weight:600;}
+  .closetag{margin-top:16px;font-weight:800;font-size:12.5px;letter-spacing:.03em;color:#fff;}
+  .closetag span{color:#9cc3e6;}
+
+  .footline{padding:10px 0.85in;font-size:9.5px;color:var(--slate);display:flex;justify-content:space-between;border-top:1px solid var(--hair);}
+  .disclaimer{padding:0 0.85in 16px;font-size:9.5px;color:var(--slate);font-style:italic;line-height:1.5;}
+
+  /* ---------- Print ---------- */
+  @page{size:letter;margin:0.5in;}
+  @media print{
+    body{background:#fff;}
+    .sheet{box-shadow:none;margin:0;max-width:none;}
+    section,.verdicts,.pricegrid,.close{page-break-inside:avoid;}
+    .masthead{-webkit-print-color-adjust:exact;print-color-adjust:exact;}
+    .close,.tagchip,.preparedband,.verdict,.price{-webkit-print-color-adjust:exact;print-color-adjust:exact;}
+  }
+  @media (max-width:640px){
+    .pad,.masthead,.preparedband,.close,.footline,.hair,.disclaimer{padding-left:22px;padding-right:22px;}
+    .hair{margin-left:22px;margin-right:22px;}
+    .verdicts{grid-template-columns:1fr 1fr;}
+    .pricegrid{grid-template-columns:1fr;}
+    h1.title{font-size:26px;}
+  }
+</style>
+</head>
+<body>
+<div class="sheet">
+
+  <!-- MASTHEAD -->
+  <div class="masthead">
+    <div class="brandrow">
+      <svg class="shield" viewBox="0 0 38 44" fill="none" xmlns="http://www.w3.org/2000/svg" aria-hidden="true">
+        <path d="M19 1.5 36 7v13c0 12-7.6 19.5-17 22.5C9.6 39.5 2 32 2 20V7L19 1.5Z" fill="#0b5ea3" stroke="#cfe0f0" stroke-width="1.4"/>
+        <path d="M12 21.5l4.8 4.8L27 15" stroke="#ffffff" stroke-width="2.6" stroke-linecap="round" stroke-linejoin="round"/>
+      </svg>
+      <div class="wordmark">THE NEHEMIAH LAYER<small>AlêBuca Global Connect, LLC</small></div>
+    </div>
+
+    <div class="eyebrow">Private Friends &amp; Family Offering</div>
+    <h1 class="title">Deterministic authority for the systems<br>that now act on their own.</h1>
+    <div class="subtitle">A pre-execution control layer that decides — before any action runs — whether an autonomous system is allowed to take it. This is a private, early opportunity to own a share of it.</div>
+    <div class="tagchip">AI Only Acts When We Allow It!</div>
+  </div>
+
+  <!-- PREPARED FOR -->
+  <div class="preparedband">
+    <div><span class="lab">Prepared for</span><span class="val">Friends &amp; Family</span></div>
+    <div><span class="lab">Prepared by</span><span class="val">Kevin A. Caron — Founder, CEO &amp; Chief Architect</span></div>
+    <div><span class="lab">Date</span><span class="val">July 2026</span></div>
+  </div>
+
+  <div class="pad">
+
+    <!-- THESIS -->
+    <section>
+      <div class="kicker">The Thesis</div>
+      <h2>Every critical system in the field runs on a governor. The one that thinks does not.</h2>
+      <p class="lead">In energy, nothing powerful is ever left unbounded. Turbines have governors. Pipelines have pressure limits and shut-in valves. Compressors, vehicles, and control systems all operate inside hard limits by design. Yet the one system now being handed real operational authority — software that can decide and act on its own — is being deployed with no governor at all.</p>
+      <p><strong>The Nehemiah Layer (TNL) is that governor.</strong> It is the harness placed between a decision-making system and the actions it can take, so that authority is enforced by design rather than hoped for after the fact.</p>
+    </section>
+
+    <div class="hair"></div>
+
+    <!-- THE GAP -->
+    <section>
+      <div class="kicker">The Gap It Closes</div>
+      <h2>Detection tells you what went wrong. Authority decides before anything happens.</h2>
+      <p>Monitoring, threat detection, and audit tools are built to answer one question — <em>what went wrong?</em> — after an action has already executed. TNL answers a different question first: <strong>is this action allowed to happen at all?</strong></p>
+      <p>TNL sits directly in front of every action an autonomous system attempts and renders a decision <strong>before execution</strong>. Its default posture is <strong>DENY</strong>: nothing acts unless it has been explicitly permitted. This is the difference between an alarm that reports a breach and a lock that prevents one.</p>
+    </section>
+
+    <div class="hair"></div>
+
+    <!-- HOW IT WORKS -->
+    <section>
+      <div class="kicker">How It Works</div>
+      <h2>Four verdicts. No guesswork. A sealed record of every one.</h2>
+      <p>Every proposed action is intercepted and evaluated against the operator's own rules — <strong>deterministically</strong>. The same request always produces the same verdict; there is no probabilistic "best guess." One of four outcomes is returned:</p>
+      <div class="verdicts">
+        <div class="verdict v-permit"><div class="name">PERMIT</div><div class="desc">Within authority. The action proceeds.</div></div>
+        <div class="verdict v-constrain"><div class="name">CONSTRAIN</div><div class="desc">Allowed only within set limits — capped value, restricted target.</div></div>
+        <div class="verdict v-reject"><div class="name">REJECT</div><div class="desc">Violates policy. Blocked before it can execute.</div></div>
+        <div class="verdict v-escalate"><div class="name">ESCALATE</div><div class="desc">Requires a human to approve before it proceeds.</div></div>
+      </div>
+      <p>Every decision — permit or deny — is written to an <strong>immutable, tamper-evident audit trail</strong>. Not a log that can be quietly edited later, but a sealed, cryptographically chained record that proves what was decided, when, and why. When a regulator, insurer, or partner asks "who authorized that?", the answer is already on file and cannot be altered.</p>
+    </section>
+
+    <div class="hair"></div>
+
+    <!-- SCOPE -->
+    <section>
+      <div class="kicker">Scope</div>
+      <h2>Any system trusted to decide — not only AI.</h2>
+      <p>TNL governs <strong>authority</strong>, not one specific technology. It applies to any platform entrusted to make decisions and act on them. Wherever a non-human system can pull a trigger, TNL can be the layer that decides whether that trigger is allowed to be pulled:</p>
+      <div class="applies">
+        <span>AI agents</span>
+        <span>Automated transaction &amp; trading systems</span>
+        <span>SCADA &amp; industrial control automation</span>
+        <span>Robotic process automation</span>
+        <span>Algorithmic controllers</span>
+        <span>Autonomous field systems</span>
+      </div>
+      <p>This is what makes TNL a fit for energy specifically: the industry already runs on automated decision-making at every level. TNL puts a single, provable authority layer in front of all of it.</p>
+    </section>
+
+    <div class="hair"></div>
+
+    <!-- WHY IT MATTERS -->
+    <section>
+      <div class="kicker">Why It Matters</div>
+      <h2>The brake is what lets you drive fast.</h2>
+      <ul class="points">
+        <li><b>Prevented catastrophe.</b> A single blocked unauthorized action against a wellhead, valve, transfer, or control system can prevent losses that dwarf the cost of the platform many times over.</li>
+        <li><b>Provable compliance.</b> An immutable decision record for every automated action — ready-made evidence for regulators, insurers, partners, and, if it ever comes to it, a courtroom.</li>
+        <li><b>Confident adoption.</b> Operators can deploy AI and autonomy because the harness is already in place. Governance stops being the reason to wait.</li>
+        <li><b>Authority, not hope.</b> The posture shifts from "we trust the system to behave" to "the system cannot act outside the rules we set."</li>
+      </ul>
+      <p>Energy is the beachhead, but the need is universal: every industry adopting autonomous systems will need a provable authority layer in front of them. TNL is built to be that standard — <strong>safe, defensible, and insurable</strong> autonomous operation, enforced identically everywhere it runs.</p>
+    </section>
+
+    <div class="hair"></div>
+
+    <!-- WHY NOW -->
+    <section>
+      <div class="kicker">Why Now</div>
+      <h2>Automation crossed from advising into acting.</h2>
+      <p>The systems entering the field no longer just recommend — they execute. The industry is adopting autonomy faster than it is governing it, and that gap widens every quarter. The company that sets the <strong>authority standard first</strong> will define how the sector deploys AI safely — and this is the moment, before that standard is set, to be on the inside of it.</p>
+    </section>
+
+    <div class="hair"></div>
+
+    <!-- THE OFFER -->
+    <section>
+      <div class="kicker">The Opportunity</div>
+      <h2>A private share in the product — offered first to the people who believed early.</h2>
+      <p>Before The Nehemiah Layer goes to market, a small, private allocation is being offered to friends and family. This is a share in <strong>the product itself</strong> — a direct stake in what TNL earns and, one day, what it may sell for.</p>
+      <div class="pricegrid">
+        <div class="price feature"><div class="lab">Investment</div><div class="amt">$150K</div><div class="unit">one-time · friends &amp; family</div></div>
+        <div class="price"><div class="lab">Revenue share</div><div class="amt">5%</div><div class="unit">of TNL net revenue · for the life of the product</div></div>
+        <div class="price"><div class="lab">If the platform sells</div><div class="amt">5%</div><div class="unit">of the net proceeds of the sale</div></div>
+      </div>
+      <div class="callout">
+        <b>What this is — and is not.</b> This is a 5% share of the <b>net revenue</b> generated by The Nehemiah Layer product, and 5% of the <b>net proceeds</b> should the platform ever be sold. It is <b>not</b> equity or ownership in AlêBuca Global Connect, LLC, and it is <b>not</b> a stake in any separate company — there is no separate TNL entity. It is a direct share of what the product produces.
+      </div>
+      <p>The terms are flat and the circle is intentionally small. This is a private invitation, not a public offering.</p>
+    </section>
+
+    <div class="hair"></div>
+
+    <!-- USE OF FUNDS -->
+    <section>
+      <div class="kicker">Use of Funds</div>
+      <h2>What your $150K builds.</h2>
+      <ul class="points">
+        <li><b>Platform build-out.</b> Completing and hardening the deterministic engine into a production-ready platform.</li>
+        <li><b>Engineering team.</b> The dedicated development team carrying the build through to delivery and service.</li>
+        <li><b>Go-to-market.</b> Launching the Texas Founding Five customer program and bringing TNL to its first operators.</li>
+        <li><b>Texas Oil &amp; Gas AI Summit '26.</b> Standing up the industry event that establishes TNL's presence and authority standard in the market.</li>
+      </ul>
+    </section>
+
+  </div>
+
+  <!-- CLOSE -->
+  <div class="close">
+    <div class="kicker" style="color:#9cc3e6;">A Private Invitation</div>
+    <h2>Built with the people who believed first.</h2>
+    <p>This opportunity is being shared privately, with a small circle of friends and family, before The Nehemiah Layer reaches the market. If you'd like to talk it through, reach out directly — this is an invitation to a conversation, not a form to fill out.</p>
+    <div class="contact">
+      <div><span class="lab">Principal</span><span class="val">Kevin A. Caron · Founder, CEO &amp; Chief Architect</span></div>
+      <div><span class="lab">Entity</span><span class="val">AlêBuca Global Connect, LLC</span></div>
+      <div><span class="lab">Web</span><span class="val">NehemiahLayer.com</span></div>
+      <div><span class="lab">Email</span><span class="val">info@alebuca.com</span></div>
+    </div>
+    <div class="closetag">AI Only Acts <span>When We Allow It!</span></div>
+  </div>
+
+  <div class="disclaimer">
+    Shared in confidence with friends and family. This document is informational only and is not an offer or solicitation to the general public; any investment would be subject to definitive written agreements.
+  </div>
+
+  <div class="footline">
+    <span>The Nehemiah Layer — Private &amp; Confidential · Friends &amp; Family</span>
+    <span>© 2026 AlêBuca Global Connect, LLC</span>
+  </div>
+
+</div>
+</body>
+</html>
