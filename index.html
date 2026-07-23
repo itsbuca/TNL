@@ -700,14 +700,18 @@ function buildRequest(a){
 // Unrecognised verdicts resolve to DENY. Default-deny is canon; it applies here too.
 function parseResponse(j){
   if(!j) return null;
-  const raw = String(j.decision || j.outcome || j.verdict || "").toUpperCase();
+  const raw = String(j.outcome || j.decision || j.verdict || "").toUpperCase();
+  if(!raw) return null;
+  // TNL error envelope: {"outcome":"ERROR","error_code":...,"message":...}
+  // An error is not a decision. Fall back to the script rather than render a
+  // verdict the engine never issued.
+  if(raw === "ERROR") return null;
   let outcome = "DENY";
   if(raw.indexOf("PERMIT") > -1 || raw.indexOf("ALLOW") > -1) outcome = "PERMIT";
   else if(raw.indexOf("ESCALAT") > -1 || raw.indexOf("APPROV") > -1) outcome = "APPROVAL_REQUIRED";
-  if(!raw) return null;
   return {
     outcome: outcome,
-    code: j.reason_code || j.code || null,
+    code: j.error_code || j.reason_code || j.code || null,
     rule: j.rule_id || j.rule || j.constraint_id || null
   };
 }
