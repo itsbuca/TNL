@@ -438,6 +438,15 @@ a { color: inherit; text-decoration: none; }
 .ff-cell .v { margin-top: 8px; font-size: 21px; font-weight: 800; color: var(--navy-ink); }
 .ff-cell .v small { display: block; font-size: 13px; font-weight: 500; color: var(--muted); margin-top: 4px; letter-spacing: 0; }
 
+.ff-services { display: grid; grid-template-columns: repeat(3, 1fr); gap: 6px 28px; padding: 24px 34px; border-bottom: 1px solid var(--line); }
+.ff-services .lbl { grid-column: 1 / -1; font-size: 12px; font-weight: 700; letter-spacing: 0.08em; text-transform: uppercase; color: var(--muted); margin-bottom: 6px; }
+.ff-services .svc b { display: block; font-size: 16px; font-weight: 800; color: var(--navy-ink); }
+.ff-services .svc small { display: block; font-size: 13px; font-weight: 500; color: var(--muted); margin-top: 3px; line-height: 1.4; }
+@media (max-width: 760px) { .ff-services { grid-template-columns: 1fr; gap: 14px; } }
+.ff-cta { display: flex; flex-direction: column; align-items: flex-end; gap: 9px; }
+@media (max-width: 760px) { .ff-cta { align-items: flex-start; } }
+.ff-call { display: block; font-size: 13px; color: var(--muted); }
+.ff-call b { color: var(--navy-ink); }
 .ff-seats { display: flex; align-items: center; gap: 10px; padding: 24px 34px; flex-wrap: wrap; }
 .ff-seats .lbl { font-size: 13px; font-weight: 700; letter-spacing: 0.06em; text-transform: uppercase; color: var(--muted); margin-right: 6px; }
 .seat { width: 34px; height: 34px; border-radius: 8px; background: var(--navy); display: grid; place-items: center; }
@@ -532,7 +541,7 @@ a { color: inherit; text-decoration: none; }
         <span class="live-dot"></span>
         <span class="console-title">Live Authorization Feed</span>
         <span class="mode-badge sim" id="mode-badge">connecting…</span>
-        <span class="console-tenant">Tenant: <b>Permian Ridge Operating, LLC — Midland, TX</b></span>
+        <span class="console-tenant">Demonstration tenant: <b>Permian Ridge Operating, LLC — Midland, TX</b></span>
       </div>
       <div class="console-bar-right">
         <span class="stat-pill"><b id="c-permit">0</b> permitted</span>
@@ -623,7 +632,7 @@ a { color: inherit; text-decoration: none; }
   </div>
   <div class="audit-wrap reveal">
     <div class="audit-topbar">
-      <span class="t">Immutable Proof Layer — Permian Ridge Operating, LLC</span>
+      <span class="t">Immutable Proof Layer — Permian Ridge Operating, LLC (demonstration tenant)</span>
       <span class="audit-badge">● chain verified · tamper-evident</span>
     </div>
     <div class="audit-scroll">
@@ -642,9 +651,15 @@ a { color: inherit; text-decoration: none; }
   <div class="ff-panel">
     <div class="ff-head"><span class="ff-invite">By invitation</span><span class="ff-title">Texas Founding Five<sup>™</sup></span></div>
     <div class="ff-grid">
-      <div class="ff-cell"><div class="k">The commitment</div><div class="v">$500,000<small>one-time cornerstone customer commitment</small></div></div>
+      <div class="ff-cell"><div class="k">The commitment</div><div class="v">$500,000<small>$100,000 at signing · $400,000 at governance handover</small></div></div>
       <div class="ff-cell"><div class="k">What you receive</div><div class="v">Permanent advantage<small>enterprise licensing advantage, held for life</small></div></div>
       <div class="ff-cell"><div class="k">Your seat</div><div class="v">Steering Committee<small>direct voice in the roadmap you depend on</small></div></div>
+    </div>
+    <div class="ff-services">
+      <span class="lbl">Starts at signing · included</span>
+      <span class="svc"><b>Authority Assessment</b><small>where AI and automation touch your decisions, and who can stop each one</small></span>
+      <span class="svc"><b>Shadow Pilot</b><small>60 to 90 days of the Layer observing your real actions, with nothing blocked</small></span>
+      <span class="svc"><b>Governance Advisory</b><small>our governance lead and your draft rulebook, through go-live</small></span>
     </div>
     <div class="ff-seats">
       <span class="lbl">5 of 5 seats available</span>
@@ -652,10 +667,13 @@ a { color: inherit; text-decoration: none; }
     </div>
     <div class="ff-foot">
       <span class="ff-status">Not equity. Not an investment. A <b>cornerstone customer</b> position in the control layer your operation will run on.</span>
-      <a class="btn-primary" href="mailto:info@alebuca.com?subject=Texas%20Founding%20Five%20briefing">Request a Founding Five briefing</a>
+      <div class="ff-cta">
+        <a class="btn-primary" href="mailto:info@alebuca.com?subject=Texas%20Founding%20Five%20briefing">Request a Founding Five briefing</a>
+        <span class="ff-call">Or call <b><a href="tel:+14699051691" style="color:inherit;text-decoration:none">469-905-1691</a></b> · info@alebuca.com</span>
+      </div>
     </div>
   </div>
-  <div class="construction">Platform <b>LIVE</b> · Operator console at <b>console.nehemiahlayer.com</b></div>
+  <div class="construction">Platform <b>DEPLOYED</b> · Enterprise testing under way · Operator console at <b>console.nehemiahlayer.com</b></div>
 </div></section>
 
 <footer class="site-footer"><div class="wrap footer-row">
@@ -742,15 +760,15 @@ function setMode(live){
   else    { b.textContent = "simulated"; b.className = "mode-badge sim"; }
 }
 const ACTIONS = [
- {id:"ACT-8801",agent:"Production-Scheduler-Agent",initials:"PS",action:"Raise gas-lift injection rate +2% — Well #14",kind:"permit",event:"AUTHORIZATION_APPROVED",ts:"2026-11-18T14:32:06.114Z"},
- {id:"ACT-8802",agent:"SCADA-Optimizer-Agent",initials:"SO",action:"Read tank levels — Battery 7",kind:"permit",event:"AUTHORIZATION_APPROVED",ts:"2026-11-18T14:32:07.512Z"},
- {id:"ACT-8803",agent:"Procurement-Autopilot",initials:"PA",action:"Release vendor payment $18,400 — chemical supplier",kind:"permit",event:"AUTHORIZATION_APPROVED",ts:"2026-11-18T14:32:09.238Z"},
- {id:"ACT-8804",agent:"SCADA-Optimizer-Agent",initials:"SO",action:"Set wellhead pressure to 4,200 psi — Well #22",kind:"deny",code:"CONSTRAINT_VIOLATION",rule:"MAX_WELLHEAD_PRESSURE · 3,500 psi (hard)",event:"AUTHORIZATION_REJECTED",ts:"2026-11-18T14:32:10.905Z"},
- {id:"ACT-8805",agent:"Production-Scheduler-Agent",initials:"PS",action:"Optimize choke position — Well #9",kind:"permit",event:"AUTHORIZATION_APPROVED",ts:"2026-11-18T14:32:12.640Z"},
- {id:"ACT-8806",agent:"Procurement-Autopilot",initials:"PA",action:"Release vendor payment $312,000 — AFE overrun (drilling)",kind:"financial",code:"CONSTRAINT_VIOLATION",rule:"AUTONOMOUS_TXN_CEILING",event:"AUTHORIZATION_REJECTED",ts:"2026-11-18T14:32:14.377Z"},
- {id:"ACT-8807",agent:"Regulatory-Filing-Agent",initials:"RF",action:"Submit Form PR production report — Texas RRC",kind:"hold",code:"APPROVAL_REQUIRED",rule:"Routed to Compliance Officer → approved · Execution Token issued",event:"APPROVAL_GRANTED",ts:"2026-11-18T14:32:16.101Z"},
- {id:"ACT-8808",agent:"Field-Ops-Agent",initials:"FO",action:"Initiate emergency shut-in — Well #7",kind:"hold",code:"APPROVAL_REQUIRED",rule:"Routed to on-call Production Engineer · awaiting authorization",event:"APPROVAL_REQUESTED",ts:"2026-11-18T14:32:17.998Z"},
- {id:"ACT-8809",agent:"shadow-bot-x",initials:"?",action:"Attempt setpoint change — Well #3",kind:"deny",code:"AUTHENTICATION_FAILED",rule:"Unregistered agent · rejected at Identity",event:"AUTHORIZATION_REJECTED",ts:"2026-11-18T14:32:19.443Z"}
+ {id:"ACT-8801",agent:"Production-Scheduler-Agent",initials:"PS",action:"Raise gas-lift injection rate +2% — Well #14",kind:"permit",event:"AUTHORIZATION_APPROVED",ts:"2026-10-05T14:32:06.114Z"},
+ {id:"ACT-8802",agent:"SCADA-Optimizer-Agent",initials:"SO",action:"Read tank levels — Battery 7",kind:"permit",event:"AUTHORIZATION_APPROVED",ts:"2026-10-05T14:32:07.512Z"},
+ {id:"ACT-8803",agent:"Procurement-Autopilot",initials:"PA",action:"Release vendor payment $18,400 — chemical supplier",kind:"permit",event:"AUTHORIZATION_APPROVED",ts:"2026-10-05T14:32:09.238Z"},
+ {id:"ACT-8804",agent:"SCADA-Optimizer-Agent",initials:"SO",action:"Set wellhead pressure to 4,200 psi — Well #22",kind:"deny",code:"CONSTRAINT_VIOLATION",rule:"MAX_WELLHEAD_PRESSURE · 3,500 psi (hard)",event:"AUTHORIZATION_REJECTED",ts:"2026-10-05T14:32:10.905Z"},
+ {id:"ACT-8805",agent:"Production-Scheduler-Agent",initials:"PS",action:"Optimize choke position — Well #9",kind:"permit",event:"AUTHORIZATION_APPROVED",ts:"2026-10-05T14:32:12.640Z"},
+ {id:"ACT-8806",agent:"Procurement-Autopilot",initials:"PA",action:"Release vendor payment $312,000 — AFE overrun (drilling)",kind:"financial",code:"CONSTRAINT_VIOLATION",rule:"AUTONOMOUS_TXN_CEILING",event:"AUTHORIZATION_REJECTED",ts:"2026-10-05T14:32:14.377Z"},
+ {id:"ACT-8807",agent:"Regulatory-Filing-Agent",initials:"RF",action:"Submit Form PR production report — Texas RRC",kind:"hold",code:"APPROVAL_REQUIRED",rule:"Routed to Compliance Officer → approved · Execution Token issued",event:"APPROVAL_GRANTED",ts:"2026-10-05T14:32:16.101Z"},
+ {id:"ACT-8808",agent:"Field-Ops-Agent",initials:"FO",action:"Initiate emergency shut-in — Well #7",kind:"hold",code:"APPROVAL_REQUIRED",rule:"Routed to on-call Production Engineer · awaiting authorization",event:"APPROVAL_REQUESTED",ts:"2026-10-05T14:32:17.998Z"},
+ {id:"ACT-8809",agent:"shadow-bot-x",initials:"?",action:"Attempt setpoint change — Well #3",kind:"deny",code:"AUTHENTICATION_FAILED",rule:"Unregistered agent · rejected at Identity",event:"AUTHORIZATION_REJECTED",ts:"2026-10-05T14:32:19.443Z"}
 ];
 
 function usd(n){return "$"+n.toLocaleString("en-US");}
